@@ -2,7 +2,9 @@
 """
 Created on Mon Apr 10 05:00:51 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf18_CNN2/full_code.py
+
 """
 
 import tensorflow as tf

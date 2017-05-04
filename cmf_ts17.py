@@ -2,7 +2,9 @@
 """
 Created on Fri Mar 31 06:01:32 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf17_dropout/full_code.py
+
 """
 
 import tensorflow as tf

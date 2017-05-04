@@ -2,7 +2,9 @@
 """
 Created on Thu Mar 16 23:52:59 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf5_example2/full_code.py
+
 """
 import tensorflow as tf
 import numpy as np

@@ -2,7 +2,9 @@
 """
 Created on Wed May  3 15:19:48 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf19_saver.py
+
 """
 
 import tensorflow as tf

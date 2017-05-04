@@ -2,7 +2,9 @@
 """
 Created on Sun Mar 19 00:39:10 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow10_def_add_layer.py
+
 """
 
 import tensorflow as tf

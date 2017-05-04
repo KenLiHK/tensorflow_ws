@@ -2,7 +2,9 @@
 """
 Created on Fri Mar 17 00:07:23 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow7_variable.py
+
 """
 
 import tensorflow as tf

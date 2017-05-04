@@ -2,7 +2,9 @@
 """
 Created on Sat Mar 18 00:24:38 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tensorflow11_build_network.py
+
 """
 
 import tensorflow as tf

@@ -2,7 +2,9 @@
 """
 Created on Thu Mar 30 05:43:29 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf16_classification/full_code.py
+
 """
 
 import tensorflow as tf

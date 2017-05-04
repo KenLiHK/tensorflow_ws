@@ -2,7 +2,9 @@
 """
 Created on Tue Mar 28 05:23:59 2017
 
-Created by: Ken Li
+This code is referring to the code from this link:
+https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf15_tensorboard/full_code.py
+
 """
 
 import tensorflow as tf
