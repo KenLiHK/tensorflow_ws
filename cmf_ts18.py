@@ -10,17 +10,18 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 print('*** cmf_ts18.py ***')
+print('*** 18.1 - 18.3 ***')
 print('tensorflow version:', tf.__version__)
 
 # number 1 to 10 data
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
 def compute_accuracy(v_xs, v_ys):
-    global predictino
-    y_pre = sess.run(predictino, feed_dict={xs: v_xs, keep_prob:1})
-    correct_prediction = tf.equal(tf.argmax(y_pre,1), tf.argmax(v_ys, 1))
+    global prediction
+    y_pre = sess.run(prediction, feed_dict={xs:v_xs, keep_prob:1})
+    correct_prediction = tf.equal(tf.argmax(y_pre,1), tf.argmax(v_ys,1))
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
-    result = sess.run(accuracy, feed_dict={xs: v_xs, ys:v_ys, keep_prob: 1})
+    result = sess.run(accuracy, feed_dict={xs:v_xs, ys:v_ys, keep_prob:1})
     return result
     
     
@@ -36,7 +37,7 @@ def bias_variable(shape):
 
 def conv2d(x, W):
     #stride[1, x_movement, y_movement, 1]
-    #Must have strides[0] = strides[4] = 1
+    #Must have strides[0] = strides[3] = 1
     return tf.nn.conv2d(x, W, strides=[1,1,1,1], padding='SAME')
 
 
@@ -50,9 +51,9 @@ def max_pool_2x2(x):
 # define placeholder for inputs to network
 xs = tf.placeholder(tf.float32, shape=[None, 784]) #28 x 28
 ys = tf.placeholder(tf.float32, shape=[None, 10])
-keep_prob = tf.placeholder(tf.float32)
+keep_prob = tf.placeholder(tf.float32, shape=None)
 x_image = tf.reshape(xs, [-1,28,28,1])
-print(x_image.shape) # [n_samples,28,28,1]
+#print(x_image.shape) # [n_samples,28,28,1]
 
 
 ## conv1 layer ##
@@ -105,7 +106,7 @@ sess.run(init)
 
 for i in range(500):
     batch_xs, batch_ys = mnist.train.next_batch(100)
-    sess.run(train_step, feed_dict={xs:batch_xs, ys:batch_ys})
+    sess.run(train_step, feed_dict={xs:batch_xs, ys:batch_ys, keep_prob:0.5})
     if i % 50 == 0:
         print(compute_accuracy(mnist.test.images, mnist.test.labels))
      
