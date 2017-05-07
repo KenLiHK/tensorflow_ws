@@ -12,7 +12,7 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 print('*** cmf_ts20.py ***')
-print('*** 20.1 - 20.4 ***')
+print('*** 20.1 - 20.2 ***')
 print('tensorflow version:', tf.__version__)
 
 # number 1 to 10 data
